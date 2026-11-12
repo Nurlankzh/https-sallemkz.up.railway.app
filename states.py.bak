@@ -1,0 +1,17 @@
+from aiogram.fsm.state import State, StatesGroup
+
+
+class AdminStates(StatesGroup):
+    waiting_video = State()
+    waiting_broadcast = State()
+    waiting_add_coins = State()
+    waiting_remove_coins = State()
+    waiting_ban = State()
+    waiting_unban = State()
+    waiting_promo_code = State()
+    waiting_promo_amount = State()
+
+
+class UserStates(StatesGroup):
+    waiting_withdraw = State()
+    waiting_promo = State()
